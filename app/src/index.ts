@@ -14,9 +14,6 @@ const app = new Elysia({
   .use(healthPlugin)
   .listen(3000);
 
-// TODO: Lifecycle = middlewares
-// TODO: Schema = validations
-
 console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
+  `🦊 Elysia is jasjdasdjkasjdk kjasdjkasdjajskdj asd running at ${app.server?.hostname}:${app.server?.port}`,
 );
