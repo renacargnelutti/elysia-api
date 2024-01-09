@@ -24,6 +24,7 @@ services:
     image: mongo
     volumes:
       - ./database/data:/data/db
+      - ./src/database_connection/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
     # TODO: use environment variables
     environment:
       - MONGO_INITDB_ROOT_USERNAME=mongo_user
