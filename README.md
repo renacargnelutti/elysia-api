@@ -1,15 +1,15 @@
 # Elysia with Bun runtime
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+This project is intended to be a simple and easy API for testing purposes using the Bun runtime and Elysia framework. We also use MongoDB as the database and that's why you will see we are using `mongoose` as driver, and for now it's used to validate the connection with the database.
+
+### IMPORTANT: You will notice that we are using hardcoded values for database connection but it's just for testing purposes. Also as we are running it in Docker locally, no one will be able to access it.
+
+## How to run it?
+
+As we need a MongoDB instance running, we use Docker to spin up a container with the database. To do so, you can run the following command:
+
 ```bash
-bun create elysia ./elysia-example
+docker-compose up
 ```
 
-## Development
-To start the development server run:
-```bash
-bun run dev
-```
-
-Open http://localhost:3000/ with your browser to see the result.
+After a few seconds you will see a message like this one `🦊 Elysia is running at localhost:3000`
