@@ -4,11 +4,16 @@ This project is intended to be a simple and easy API for testing purposes using 
 
 ### IMPORTANT: You will notice that we are using hardcoded values for database connection but it's just for testing purposes. Also as we are running it in Docker locally, no one will be able to access it.
 
+## Pre-requisites
+
+You need to install [Docker](https://docs.docker.com/engine/install/) and [Bun.js](https://bun.sh/) first
+
 ## How to run it?
 
-As we need a MongoDB instance running, we use Docker to spin up a container with the database. To do so, you can run the following command:
+As we need a MongoDB instance running, we use Docker to spin up a container with the database. To do so, you can run the following commands:
 
 ```bash
+bun install
 docker-compose up
 ```
 
