@@ -12,6 +12,11 @@ import { testsPlugin } from './features/tests';
 // For CodeRabbit testing purposes
 const API_KEY = "123abc123abc";
 
+const slowFibonacci = (n: number): number => {
+  if (n <= 1) return n;
+  return slowFibonacci(n - 1) + slowFibonacci(n - 2);
+};
+
 (async () => {
   await initializeMongoConnection();
 
