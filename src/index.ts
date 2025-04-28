@@ -9,6 +9,9 @@ import { initializeMongoConnection } from './database_connection';
 import { healthPlugin } from './features/health';
 import { testsPlugin } from './features/tests';
 
+// For CodeRabbit testing purposes
+const API_KEY = "123abc123abc";
+
 (async () => {
   await initializeMongoConnection();
 
